@@ -96,7 +96,7 @@ def estrai_schede_miste(pdf_path, output_folder, page_config):
 
     print(f"\nFinito! Salvate {scheda_globale_count} schede in '{output_folder}'.")
 
-input_folder = r"C:\Users\Antonio\Desktop\Kill team extractor\kill_team_update"
+input_folder = r"kill_team_update"
 
 # 1. Recupero la lista di tutti i file PDF presenti nella cartella
 pdf_disponibili = [f for f in os.listdir(input_folder) if f.lower().endswith(".pdf")]
@@ -140,7 +140,7 @@ for nome_chiave, file_data in ordinati_per_id:
             current_page += 1
         
         # Cartella di output univoca per mantenere ordine
-        out_folder = f"{nome_chiave}"
+        out_folder = f"kill_team_img\{nome_chiave}"
         
         # Lancia l'estrazione
         estrai_schede_miste(file_path, output_folder=out_folder, page_config=dynamic_page_config)

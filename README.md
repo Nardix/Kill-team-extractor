@@ -5,3 +5,5 @@ This is a simple kill team image extractor of every faction data card (operative
 Copy-paste the download.js script on console browser while on kill team website
 
 Then use the first_extract script to extract the single images from every faction
+
+You can put in kill_team_update all the pdf you need for the extraction
